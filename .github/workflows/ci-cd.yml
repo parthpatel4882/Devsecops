@@ -142,5 +142,5 @@ jobs:
                   
             - name: Set image tag output
               id: set_output
-              run: echo "image_tag=$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
+              run: echo "image_tag=$(echo '${{ github.sha }}' | cut -c1-7)" >> $GITHUB_OUTPUT
          
